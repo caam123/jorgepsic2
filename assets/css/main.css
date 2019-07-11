@@ -1,5 +1,5 @@
 :root{
-    --gris: #f1f1f3;
+    --gris: #e1e1e1;
     --azul: #005470;
     --negro: #6D6E71;
     --cyan: #378db6;
@@ -20,8 +20,19 @@ body{
 
 .flex-container{
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: nowrap;
    
+}
+
+.flex-container-sections{
+    display:flex;
+    flex-flow: column nowrap;
+   
+}
+
+.whiteblock,
+.blueblock{
+    padding:2rem;
 }
 
 header{
@@ -67,13 +78,28 @@ ul li a:hover{
 
 .blueblock{
     background-color:var(--azul);
-    height: 50vh;
+    min-height: 50vh;
     width:100vw;
 }
 
 .whiteblock{
     background-color:var(--gris);
-    height: 50vh;
+    min-height: 50vh;
     width:100vw;
 
+}
+
+h1{
+    font-family: "Aller", sans-serif;
+    color:var(--cyan);
+    display:block;
+}
+
+blockquote{
+    border-left: 3px solid var(--cyan);
+    padding-left: 0.9rem;
+}
+
+.small-text{
+    font-size: 1rem;
 }
